@@ -5,21 +5,21 @@
 class Oura < Formula
   desc "Agent-first CLI and MCP server for the Oura Ring API v2"
   homepage "https://github.com/ouracli/oura"
-  version "0.4.2"
+  version "0.4.3"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ouracli/oura/releases/download/v0.4.2/oura_0.4.2_darwin_amd64.tar.gz"
-      sha256 "08f25f8b7b82caf6fd228044cd6cabe3b93c88786217f252a5f728d1b2bed90e"
+      url "https://github.com/ouracli/oura/releases/download/v0.4.3/oura_0.4.3_darwin_amd64.tar.gz"
+      sha256 "dd892b4c1aa138e838c8f9f4f81779ad34682e5085501f2f7b6e0d00e15d2377"
 
       define_method(:install) do
         bin.install "oura"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ouracli/oura/releases/download/v0.4.2/oura_0.4.2_darwin_arm64.tar.gz"
-      sha256 "c4b18b83b1fe5884ccb2bbf5e36f728e33665b57f14c93f514374bb505ac1d08"
+      url "https://github.com/ouracli/oura/releases/download/v0.4.3/oura_0.4.3_darwin_arm64.tar.gz"
+      sha256 "3c0e771274c52a50a248a9eba0246d81d4ceb3ce3d26b025d10dad6d600ad5d5"
 
       define_method(:install) do
         bin.install "oura"
@@ -29,15 +29,15 @@ class Oura < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ouracli/oura/releases/download/v0.4.2/oura_0.4.2_linux_amd64.tar.gz"
-      sha256 "9f013bd757ff4c0b1078d590f1915d28918a6b321c7f3f490bb9971c52c284f7"
+      url "https://github.com/ouracli/oura/releases/download/v0.4.3/oura_0.4.3_linux_amd64.tar.gz"
+      sha256 "1faf7e92e0907b56f4faad967babbea846f3de6838c4439532f98d0234f8cce0"
       define_method(:install) do
         bin.install "oura"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ouracli/oura/releases/download/v0.4.2/oura_0.4.2_linux_arm64.tar.gz"
-      sha256 "7a3f9d9400fabba0f8e66cd012733299d7b1b07c4b2db8ca5e77244e270916fe"
+      url "https://github.com/ouracli/oura/releases/download/v0.4.3/oura_0.4.3_linux_arm64.tar.gz"
+      sha256 "b0e2dc09125f2f4f806a3759606436b718c651302eadb08ab385fc3ff56f8665"
       define_method(:install) do
         bin.install "oura"
       end
